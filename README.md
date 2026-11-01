@@ -1,4 +1,42 @@
+# 🔐 Security Fundamentals Assessment
 
+**Identifying and documenting web application vulnerabilities in an isolated lab using Kali Linux, Burp Suite, and OWASP Juice Shop**
+
+![Skill](https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000) ![Target](https://img.shields.io/badge/Target-OWASP%20Juice%20Shop-E87500?style=flat-square&labelColor=000000) ![Guest OS](https://img.shields.io/badge/Platform-Kali%20Linux-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white) ![Skill](https://img.shields.io/badge/Skill-Web%20App%20Security-404040?style=flat-square&labelColor=C00000) ![Tool](https://img.shields.io/badge/Tool-Burp%20Suite-FF6633?style=flat-square&labelColor=000000) ![Tool](https://img.shields.io/badge/Tool-Nmap%20%7C%20Nikto-238F89?style=flat-square&labelColor=000000) ![SWYNEX](https://img.shields.io/badge/SWYNEX-Internship-C00000?style=flat-square&labelColor=000000) ![Author](https://img.shields.io/badge/Mubassir-C00000?style=flat-square)
+
+---
+
+## 📌 Project Overview
+
+This is my **Task 1 — Security Fundamentals Assessment** submission for the SWYNEX Technologies internship.
+
+The task was to perform a security assessment inside an authorized lab environment, identify real vulnerabilities, and document each one with its affected component, risk, evidence, and recommended mitigation.
+
+I built an isolated lab using **Kali Linux (VMware)** running **OWASP Juice Shop** — an intentionally vulnerable web application — in a Docker container, and tested it exclusively on `localhost`, with no external systems involved.
+
+---
+
+## 🎯 Objectives
+
+- Set up a safe, isolated lab environment for web application testing.
+- Run reconnaissance to identify the target, open ports, and HTTP configuration.
+- Identify and exploit real vulnerabilities using manual testing and Burp Suite.
+- Document each finding with evidence, risk level, and mitigation advice.
+- Practice professional vulnerability reporting.
+
+⚠️ **Important:** All testing was performed only against a local, self-hosted instance that I own and control. No external or unauthorized systems were tested.
+
+---
+
+## 🛡️ Lab Architecture
+
+Kali Linux VM (VMware)
+|
+Docker container — OWASP Juice Shop
+|
+http://localhost:3000
+|
+Tested with: Nmap, Nikto, curl, Burp Suite, Firefox
 ---
 
 ## ⚙️ Lab Configuration
