@@ -37,6 +37,8 @@ Docker container — OWASP Juice Shop
 http://localhost:3000
 |
 Tested with: Nmap, Nikto, curl, Burp Suite, Firefox
+
+
 ---
 
 ## ⚙️ Lab Configuration
@@ -64,6 +66,28 @@ Full details for each finding — affected component, risk, evidence, recommende
 
 ---
 
+## 📸 Evidence Screenshots
+
+**Finding 1 — SQL Injection (Authentication Bypass)**
+
+![Login form with SQLi payload](evidence/05.png)
+![Challenge solved after login](evidence/06.png)
+![Burp Suite request/response capture](evidence/07.png)
+
+**Finding 2 — DOM-Based XSS**
+
+![XSS alert popup](evidence/08.png)
+
+**Finding 3 — Sensitive Data Exposure**
+
+![/ftp directory listing](evidence/09.png)
+
+**Reconnaissance**
+
+![Nmap / header / Nikto scan output](evidence/01.png)
+
+---
+
 ## 🪜 Methodology
 
 **Step 1 — Reconnaissance**
@@ -81,7 +105,7 @@ Discovered a publicly accessible `/ftp` directory containing an internal documen
 **Step 5 — Configuration review**
 Reviewed response headers for missing security controls (CSP, HSTS) and overly permissive CORS.
 
-All request/response pairs were captured in Burp Suite; screenshots for each finding are in the [`evidence/`](evidence) folder.
+All request/response pairs were captured in Burp Suite; full-resolution screenshots are in the [`evidence/`](evidence) folder.
 
 ---
 
@@ -129,3 +153,5 @@ Security Intern, SWYNEX Technologies — Task 1
 ## 📌 Project Information
 
 **Program:** SWYNEX Technologies Internship | **Task:** 1 — Security Fundamentals Assessment | **Repository:** GitHub
+## 🛡️ Lab Architecture
+
